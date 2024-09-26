@@ -1,5 +1,5 @@
 import "animate.css";
-import "./Main.css";
+import "./main.css";
 
 const Main = () => {
   return (
