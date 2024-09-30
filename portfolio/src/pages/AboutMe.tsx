@@ -12,7 +12,11 @@ const AboutMe = () => {
       </div>
       {/* Education */}
       <div className="animate__animated animate__fadeInUp Education">
-        <h2>Education 🎓</h2>
+        <h2>Education & Career 🎓</h2>
+        <div className="period">
+          <h3>2023.9-2024.5</h3>
+          <div>(주)제로엑스플로우 Growth Marketer</div>
+        </div>
         <div className="period">
           <h3>2020.3-2025.2</h3>
           <div>한양대학교 행정학과 재학 중</div>
