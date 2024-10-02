@@ -6,6 +6,7 @@ const Header = () => {
   const navToHome = () => navigate("/");
   const navToAboutMe = () => navigate("/about-me");
   const navToProjects = () => navigate("/projects");
+  const navToContact = () => navigate("/contact");
   return (
     <div className="header">
       <h2>DB's Portfolio</h2>
@@ -13,7 +14,7 @@ const Header = () => {
         <a onClick={navToHome}>Home</a>
         <a onClick={navToAboutMe}>About Me</a>
         <a onClick={navToProjects}>Projects</a>
-        <a href="#contact">Contact</a>
+        <a onClick={navToContact}>Contact</a>
       </nav>
     </div>
   );
