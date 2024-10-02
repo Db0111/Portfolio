@@ -74,44 +74,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="animate__animated animate__flipInX card">
-        <h2>OOTC (2024.08-2024.09)</h2>
-        <div className="stack">
-          <img src="https://img.shields.io/badge/Typescript-3178C6.svg?style=for-the-badge&logo=typescript&logoColor=FFFFFF" />
-          <img src="https://img.shields.io/badge/React-20232a.svg?style=for-the-badge&logo=react&logoColor=61DAFB" />
-          <img src="https://img.shields.io/badge/Emotion-c570be.svg?style=for-the-badge&logo=emotion&logoColor=FFFFFF" />
-        </div>
-        <div className="project_title">
-          <BsBalloonFill style={{ width: "20px", height: "20px" }} />
-          <div>
-            위치 및 시간을 기반으로 날씨를 조회하여 옷차림을 추천해주는 서비스
-          </div>
-        </div>
-        <div className="project_description">
-          <BsBalloonFill style={{ width: "20px", height: "20px" }} />
-          <div>
-            사용자의 현위치 혹은 직접 선택한 위치를 기준으로, 외출시간을
-            선택하면 그 시간에 맞는 날씨 정보(기온, 강수량, 강수확률) 등의
-            정보를 제공하고, 그 정보를 바탕으로 옷차림을 추천해주는
-            서비스입니다.
-          </div>
-        </div>
 
-        <div className="site">
-          <div className="link">
-            {/* <img src="https://img.shields.io/badge/Website-181717.svg?style=for-the-badge&logo=emotion&logoColor=FFFFFF" /> */}
-
-            <img src="https://img.shields.io/badge/Github-181717.svg?style=for-the-badge&logo=github&logoColor=ffffff" />
-            <a
-              href="https://github.com/FashionForecast/FashionForecast-client"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://github.com/FashionForecast/FashionForecast-client
-            </a>
-          </div>
-        </div>
-      </div>
       <div className="animate__animated animate__flipInX card">
         <h2>QuizGen (2024.08-)</h2>
         <div className="stack">
