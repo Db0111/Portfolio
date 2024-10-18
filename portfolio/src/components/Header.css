@@ -17,3 +17,24 @@
   gap: 2rem;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    gap: 10rem;
+  }
+
+  .nav-bar {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    gap: 4rem;
+    font-size: 0.8rem;
+  }
+
+  .nav-bar {
+    gap: 0.5rem;
+  }
+}
