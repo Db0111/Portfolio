@@ -20,11 +20,21 @@
 
 .AboutMe {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid #e5e5e5;
 }
+.myphoto {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  width: 6rem;
+}
+
 .Education {
   display: flex;
   flex-direction: column;
@@ -49,4 +59,29 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
+}
+.container {
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    font-size: 0.9rem;
+  }
+  .AboutMe {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .myphoto {
+    width: 6rem;
+  }
+  .Education {
+    gap: 1rem;
+  }
+  .period {
+    gap: 1rem;
+  }
+  .stack {
+    gap: 0.3rem;
+  }
 }

@@ -1,14 +1,20 @@
 import "./AboutMe.css";
 import "animate.css";
+import MyPhoto from "../assets/MyPhoto.png";
 
 const AboutMe = () => {
   return (
     <div className="container">
       {/* About Me */}
       <div className="animate__animated animate__fadeInUp AboutMe">
-        <h2>About me 🍅</h2>
-        <div>김덕빈(Kim Deokbin)</div>
-        <div>2001. 01. 11</div>
+        <div>
+          <h2>About me 🍅</h2>
+          <div>김덕빈(Kim Deokbin)</div>
+          <div>2001. 01. 11</div>
+        </div>
+        <div>
+          <img src={MyPhoto} className="myphoto"></img>
+        </div>
       </div>
       {/* Education */}
       <div className="animate__animated animate__fadeInUp Education">
