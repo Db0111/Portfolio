@@ -31,10 +31,9 @@
 }
 
 .main_container2 {
-  display: flex;
   flex-direction: column;
-  padding: 0 2rem;
-  height: 100vh;
+  padding: 5rem 2rem;
+  height: 80vh;
   background-color: #ffffff;
   justify-content: center;
   margin: 0;
@@ -49,11 +48,42 @@
 
 .main_container2 h2:nth-child(2) {
   margin-top: 5rem;
+  line-height: 2;
   animation-delay: 0.5s;
   animation-duration: 1.5s;
 }
 
 .main_container2 h2:nth-child(3) {
+  margin-top: 5rem;
+  line-height: 2;
   animation-delay: 1s;
   animation-duration: 1.5s;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .main_container2 h1 {
+    font-size: 2rem;
+  }
+  .main_container2 h2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    gap: 4rem;
+    font-size: 0.8rem;
+  }
+
+  .nav-bar {
+    gap: 0.5rem;
+  }
 }
