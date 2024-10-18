@@ -97,3 +97,31 @@
   height: 20px;
   flex-shrink: 0; /* 아이콘 크기를 고정시킴 */
 }
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project_image {
+    width: 70%;
+    height: 70%;
+    margin-right: 0;
+  }
+  .stack img {
+    width: 6rem;
+    height: 30px;
+  }
+
+  .description {
+    width: 100%;
+  }
+  .project_title,
+  .project_description {
+    font-size: 0.8rem;
+  }
+  .link a {
+    font-size: 0.8rem;
+  }
+}

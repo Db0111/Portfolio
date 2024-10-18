@@ -67,3 +67,21 @@
 .mailto-link:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .submit-button {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
