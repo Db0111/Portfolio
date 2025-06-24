@@ -32,6 +32,11 @@ const Main = () => {
   return (
     <>
       <div className="main_container" ref={ref1}>
+        <img
+          src="/profile.png"
+          alt="프로필 이미지"
+          className="profile-image animate__animated animate__fadeIn"
+        />
         <h1
           className={`animate__animated ${inView1 ? "animate__flipInX" : ""}`}
         >
