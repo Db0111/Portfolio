@@ -92,12 +92,12 @@ const Projects = () => {
           <img src={QuizGen} alt="QuizGen" />
         </div>
         <div className="description">
-          <h2>QuizGen (2024.08-)</h2>
+          <h2>QuizGen (2024.08-2024.11)</h2>
           <div className="stack">
             <img src="https://img.shields.io/badge/Typescript-3178C6.svg?style=for-the-badge&logo=typescript&logoColor=FFFFFF" />
             <img src="https://img.shields.io/badge/React-20232a.svg?style=for-the-badge&logo=react&logoColor=61DAFB" />
-            <img src="https://img.shields.io/badge/Tailwind-1daabb.svg?style=for-the-badge&logo=tailwindcss&logoColor=FFFFFF" />
             <img src="https://img.shields.io/badge/React%20Router-CA4245.svg?style=for-the-badge&logo=reactrouter&logoColor=FFFFFF" />
+            <img src="https://img.shields.io/badge/Tailwind-1daabb.svg?style=for-the-badge&logo=tailwindcss&logoColor=FFFFFF" />
           </div>
           <div className="project_title">
             <BsBalloonFill style={{ width: "20px", height: "20px" }} />
