@@ -1,102 +1,150 @@
-.container {
+.aboutme-section {
+  min-height: 100vh;
+}
+.aboutme-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.aboutme-header {
+  text-align: center;
+}
+.aboutme-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.aboutme-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.aboutme-card {
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border: 1px solid #f3f4f6;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  background: var(--bg-color, #fff);
+}
+.aboutme-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.3);
+}
+.aboutme-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.aboutme-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.aboutme-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.aboutme-card-content {
   display: flex;
   flex-direction: column;
-  padding: 0 2rem;
-  font-family: "Nanum Gothic", sans-serif;
-  background-color: #f5f5f5;
+  gap: 20px;
+}
+.aboutme-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0 0 12px 0;
 }
 
-.container div:first-child {
-  animation-delay: 0s; /* 첫 번째 h1에 즉시 실행 */
-}
-
-.container div:nth-child(2) {
-  animation-delay: 0.5s; /* 두 번째 h1에 0.5초 딜레이 */
-}
-
-.container div:nth-child(3) {
-  animation-delay: 1s; /* h2에 1초 딜레이 */
-}
-
-.AboutMe {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #e5e5e5;
-}
-.myphoto {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  align-items: center;
-  width: 6rem;
-  margin-top: 1rem;
-}
-
-.Education {
+.aboutme-info {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding-bottom: 2rem;
-
-  border-bottom: 1px solid #e5e5e5;
+  gap: 8px;
+  font-size: 1.1rem;
+}
+.aboutme-name {
+  font-weight: 600;
+}
+.aboutme-birth {
+  color: #6b7280;
 }
 
-.period {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
-}
-.stack_container {
+.aboutme-education-list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  height: 100vh;
+  gap: 12px;
 }
-.stack {
+.aboutme-education-item {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  gap: 16px;
+  align-items: center;
+  font-size: 1rem;
 }
-.container {
-  transition: all 0.5s ease;
+.aboutme-education-period {
+  font-weight: 600;
+  color: #2563eb;
+  min-width: 120px;
+}
+.aboutme-education-desc {
+  color: var(--text-color);
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    font-size: 0.9rem;
+.aboutme-stack-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aboutme-stack-row {
+  display: flex;
+  gap: 8px;
+}
+.aboutme-stack-badge {
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+.aboutme-stack-badge:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .aboutme-section {
+    padding: 60px 16px;
   }
-  .AboutMe {
-    flex-direction: row;
-    gap: 2rem;
+  .aboutme-title {
+    font-size: 2.5rem;
   }
-  .myphoto {
-    width: 6rem;
+  .aboutme-card {
+    padding: 24px;
   }
-  .Education {
-    gap: 1rem;
+  .aboutme-card-title {
+    font-size: 1.25rem;
   }
-  .period {
-    gap: 1rem;
+  .aboutme-education-item {
+    font-size: 0.95rem;
+    gap: 8px;
   }
-  .stack_container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    height: 100%;
-    padding-bottom: 10rem;
+  .aboutme-stack-badge {
+    height: 20px;
   }
-  .stack1,
-  .stack2,
-  .stack3,
-  .stack4 {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    width: 30%;
+}
+@media (max-width: 480px) {
+  .aboutme-title {
+    font-size: 2rem;
+  }
+  .aboutme-card {
+    padding: 16px;
+  }
+  .aboutme-stack-badge {
+    height: 18px;
   }
 }
