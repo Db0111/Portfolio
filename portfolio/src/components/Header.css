@@ -3,10 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 20rem;
-  padding: 0 2rem;
-  border-bottom: 1px solid #e0e0e0;
   white-space: nowrap;
+  padding: 0 1rem;
 }
 
 .nav-bar {
